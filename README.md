@@ -1,3 +1,10 @@
+# This link can be used to navigate to the HTML 
+
+https://alpeshpatelgwu.github.io/Weather_Vizualized/index.html
+
+
+
+
 # Unit 12 | Assignment - Web Visualization Dashboard (Latitude)
 
 ## Background
