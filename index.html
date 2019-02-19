@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Latitude Analysis</title>
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Navigation Section -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Latitude Analysis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 39px, 0px);">
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+        </li>   
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </li>
+        </ul>
+
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+        <h1 class="display-3">What's the weather like?</h1>
+        <p class="lead">The intent of this project was to create a Python script to visualize the weather of 500+ cities across the world of varying distances from the equator.  In order to complete the analysis we made API calls to OpenWeatherMap and captured data points of over 500 cities.</p>
+        <hr class="my-4">
+        <p>We built a series of scatter plotts using the MatPlot library to showcase the following relationships:</p>
+        <ul>
+            <li>Temperature (F) vs. Latitude</li>
+            <li>Humidity (%) vs. Latitude</li>
+            <li>Cloudiness (%) vs. Latitude</li>
+            <li>Wind Speed (mph) vs. Latitude</li>
+        </ul>
+      </div>
+
+    
+<!-- Container Section for Summary -->
+
+<div class="container">
+        <div class="row">
+          <div class="col-md-auto">
+                <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                        <div class="card-body">
+                          <h4 class="card-title">Max Temperature</h4>
+                          <p class="card-text">The closer you are the hotter you get...</p>
+                          <a href="maxtemp.html">
+                                <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Image" class=img-fluid>
+                              </a>
+                        </div>
+                      </div>
+          </div>
+          <div class="col-md-auto">
+                <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                        <div class="card-body">
+                          <h4 class="card-title">Humidity</h4>
+                          <p class="card-text">Ma get the linen...</p>
+                          <a href="humidity.html">
+                                <img src="Resources/assets/images/Fig2.png" alt="Humidity Image" class=img-fluid>
+                              </a>
+                        </div>
+                </div>
+
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-auto">
+                <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                        <div class="card-body">
+                          <h4 class="card-title">Cloudiness</h4>
+                          <p class="card-text">Sometimes it's cloudy sometimes it's not...</p>
+                          <a href="cloudiness.html">
+                                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Image" class=img-fluid>
+                              </a>
+                        </div>
+                </div>
+          </div>
+          <div class="col-md-auto">
+                <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                        <div class="card-body">
+                          <h4 class="card-title">Wind Speed</h4>
+                          <p class="card-text">This ain't Chi-Town!.</p>
+                          <a href="windspeed.html">
+                                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Image" class=img-fluid>
+                              </a>
+                        </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer">Copyright &copy; Alpesh Patel 2019</div>
+</footer>
+    
+</body>
+</html>
